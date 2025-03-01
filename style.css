@@ -1,28 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
 body {
+    background-color: #0D1117;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    background-color: #242424;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    height: 7.5vh;
+    padding: 0 10vw;
+    border-bottom-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-icon {
+    height: 36px;
+    width: auto;
+    margin: 6px;
+}
+
+.header-text {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 12px;
+    padding: 12px;
+}
+
+a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #e5e7eb;
+    border-width: 1px;
+}
+
+.head-title {
+    color: #F9FAF8;
+    font-size: 48px;
+    margin: 1.5vh 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
-    width: auto;
+    height: 900x;
+    width: 900px;
+    background-color: #F9FAF8;
+    align-self: center;
 }
 
 .grid {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .square {
     border-style: solid;
     border-color: black;
     border-width: 1px;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    margin: 12px 36px;
+    background-color: #64D1C0;
+    font-weight: 900;
+}
+
+.footer {
+    background-color: #333333;
+    font-size: 14px;
+    color: #666666;
+    height: 5vh;
+    display: flex;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #000000;
+    align-items: center;
+    padding: 0 12px;
 }

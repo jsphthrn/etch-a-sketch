@@ -11,7 +11,7 @@ function divMaker(divRow) {
     const div = document.createElement("div");
     div.setAttribute("class", "square");
     div.style.opacity = 0;
-    div.style.padding = `${1000 / (4 * size)}px`
+    div.style.padding = `${900 / (4 * size)}px`
     div.addEventListener("mouseover", () => {
         let op = +div.style.opacity;
         if (isColorful) {
