@@ -10,14 +10,18 @@ function rowMaker (divGrid) {
 function divMaker(divRow) {
     const div = document.createElement("div");
     div.setAttribute("class", "square");
+    div.style.opacity = 0;
     div.style.padding = `${1000 / (4 * size)}px`
     div.addEventListener("mouseover", () => {
-       if (isColorful) {
+        let op = +div.style.opacity;
+        if (isColorful) {
             div.style.backgroundColor = `rgb(${(Math.random() * 255).toFixed(0)}, 
             ${(Math.random() * 255).toFixed(0)} ,
             ${(Math.random() * 255).toFixed(0)})`;
+            div.style.opacity = op + 0.1;
        } else {
             div.style.backgroundColor = "black";
+            div.style.opacity = op + 0.1;
        }
     });
     divRow.appendChild(div);
